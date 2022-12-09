@@ -96,6 +96,10 @@ body .header .carousel__snapper {
   height: 100%;
   scroll-snap-align: center;
 }
+body .header .carousel .article__icon {
+  color: #0D6EFD;
+  margin: 5px;
+}
 body .section_article {
   display: none;
 }
@@ -115,6 +119,23 @@ body .form__input {
 }
 body .form__input--msg {
   height: 125px;
+}
+body .footer {
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .footer__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+body .footer__list a {
+  text-decoration: none;
+}
+body .footer__text {
+  color: #9E9E9E;
 }
 
 /*# sourceMappingURL=style.css.map */
