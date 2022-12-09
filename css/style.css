@@ -1,13 +1,88 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
+}
+body .button {
+  background-color: #0D6EFD;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  width: 120px;
+  height: 50px;
+}
+body .input {
+  margin: 25px;
 }
 body .nav {
   background-color: #D9D9D9;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
 }
-body .nav .nav__button {
-  background-color: #0D6EFD;
-  border-radius: 15px;
+body .nav__placeholder {
+  font-weight: 800;
+}
+body .nav__button {
+  height: 50px;
+  width: 75px;
+}
+body .header {
+  background-image: url(/img/Lucas\ Kucheida\ -\ bg-masthead.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px;
+  text-align: center;
+}
+body .header__container {
+  margin-bottom: 25px;
+}
+body .header__container__text {
+  color: white;
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body .header .carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+  perspective: 100px;
+}
+body .header .carousel ol, body .header .carousel li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body .header .carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+body .header .carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.5);
+  border-radius: 25px;
+}
+body .header .carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
