@@ -65,7 +65,7 @@
             
           </section>
     </header>
-    <section class="section_article">
+    <div class="section_article">
         <article class="article">
             <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
             <h3 class="article__title">Lorem Ipsum</h3>
@@ -84,14 +84,19 @@
             <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
                 tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
         </article>
-    </section>
+    </div>
 
     <form class="form" action="#">
         <h2 class="form__title">Contact us</h2>
-        <input class="input form__input" type="text" placeholder="Firstname">
-        <input class="input form__input" type="text" placeholder="Lastname">
-        <input class="input form__input" type="email" placeholder="Email adress">
-        <input class="input form__input" type="tel" placeholder="Phone number">
+        <div class="form__group">
+            <input class="input form__input" type="text" placeholder="Firstname">
+            <input class="input form__input" type="text" placeholder="Lastname">
+        </div>
+        <div class="form__group">
+            <input class="input form__input" type="email" placeholder="Email adress">
+            <input class="input form__input" type="tel" placeholder="Phone number">  
+
+        </div>
         <textarea class="input form__input form__input--msg" cols="30" rows="10" placeholder="Type your message"></textarea>
         <button class="button">submit</button>
     </form>

@@ -21,8 +21,12 @@ body .input {
   border-radius: 15px;
   text-align: center;
 }
-body .input:placeholder {
+body .input::placeholder {
   color: #D9D9D9;
+}
+body .article__icon {
+  color: #0D6EFD;
+  margin: 5px;
 }
 body .nav {
   background-color: #D9D9D9;
@@ -46,6 +50,7 @@ body .header {
   text-align: center;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  margin-bottom: 25px;
 }
 body .header__container {
   margin-bottom: 25px;
@@ -96,10 +101,6 @@ body .header .carousel__snapper {
   height: 100%;
   scroll-snap-align: center;
 }
-body .header .carousel .article__icon {
-  color: #0D6EFD;
-  margin: 5px;
-}
 body .section_article {
   display: none;
 }
@@ -120,6 +121,12 @@ body .form__input {
 body .form__input--msg {
   height: 125px;
 }
+body .form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 body .footer {
   background-color: #D9D9D9;
   display: flex;
@@ -136,6 +143,67 @@ body .footer__list a {
 }
 body .footer__text {
   color: #9E9E9E;
+}
+
+@media only screen and (min-width: 481px) {
+  .input {
+    text-align: left !important;
+  }
+  .carousel {
+    display: none;
+  }
+  .section_article {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  .section_article .article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .form {
+    position: relative;
+  }
+  .form::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 70%;
+    background-color: #D9D9D9;
+    bottom: 110%;
+  }
+  .form__input {
+    width: 100% !important;
+  }
+  .form__group .input {
+    width: 70% !important;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .header__container__input {
+    width: 50% !important;
+  }
+  .section_article {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .section_article .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .form__group {
+    flex-direction: row !important;
+  }
+  .form__input {
+    width: 50% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
