@@ -51,6 +51,7 @@ body .header {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   margin-bottom: 25px;
+  background-position: center;
 }
 body .header__container {
   margin-bottom: 25px;
@@ -149,7 +150,12 @@ body .footer__text {
   .input {
     text-align: left !important;
   }
-  .carousel {
+  .header {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    height: 250px;
+  }
+  .header .carousel {
     display: none;
   }
   .section_article {

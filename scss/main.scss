@@ -63,6 +63,7 @@ body {
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
         margin-bottom: 25px;
+        background-position: center;
 
         &__container{
 
@@ -194,9 +195,15 @@ body {
     .input{
         text-align: left !important;
     }
-    .carousel{
-        display: none;
-    }
+
+    .header{
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        height: 250px;
+        .carousel{
+            display: none;
+        }
+    }   
     .section_article{
         display: flex !important;
         flex-wrap: wrap;
